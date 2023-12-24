@@ -1,12 +1,19 @@
+/**
+ * 
+ */
 package br.com.victor;
 
-import br.com.victor.cliente.ClienteTeste;
-import br.com.victor.produto.ProdutoTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
-
+/**
+ * @author victor.vianna
+ *
+ */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ClienteTeste.class, ProdutoTest.class})
+@Suite.SuiteClasses({ ClienteServiceTest.class, ClienteDAOTest.class,
+	ProdutoServiceTest.class, ProdutoDAOTest.class,
+	VendaDAOTest.class})
 public class AllTests {
+
 }
